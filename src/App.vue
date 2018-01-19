@@ -1,18 +1,18 @@
 <template>
   <div id="app">
     <img src="./assets/logo.png">
-    <hello-world/>
+    <main>
+      <v-container style="min-height: auto; margin-top: 80px;">
+        <router-view></router-view>
+      </v-container>
+    </main>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
 
 export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
+  name: 'app'
 }
 </script>
 
